@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors!</title>
+    <title>Test</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <h1>ROCK PAPER SCISSORS</h1>
+        <h1>ROCK PAPER SCISSORS TEST SITE</h1>
         <h3>Play online with friends in this classic game!</h3>
         <h4>Here are the rules
             <ul>
@@ -29,31 +29,28 @@
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="playerOne">
-                <button class="ready btn">READY</button>
-                
-                <button class="btn rpsChoice">Rock</button>
-                <button class="btn rpsChoice">Paper</button>
-                <button class="btn rpsChoice">Scissors</button>
-            </div>
-        
-            <div class="col-md-6" id="playerTwo">
-                <button class="ready btn">READY</button>
-                
-                <button class="btn rpsChoice">Rock</button>
-                <button class="btn rpsChoice">Paper</button>
-                <button class="btn rpsChoice">Scissors</button>
-            </div>
-        </div>
+           
     </div>
     <br>
     <div class="container">
         <button id="open" class="btn">Open the chat</button>
-        <div id="chatroom">
+        <div id="chatroom" style="display: none;">
+            <h5>enter your name</h5>
+            <input id="name"><br><br>
+            <textarea id="message" cols="50" rows="5"></textarea><br>
+            <button id="send">Send</button>
+            <div id="conversation">
+
+            </div>
 
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"
+        integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+    <script src="assets/script/app.js"></script>
 </body>
 
 </html>
